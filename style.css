@@ -1,0 +1,29 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; color: #edf1ff; background: #10152b; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; background: radial-gradient(ellipse at 50% 0%, #25305a, transparent 65%); }
+main { width: min(100% - 32px, 580px); margin: auto; padding: 48px 0 28px; text-align: center; }
+.eyebrow { font-size: 11px; letter-spacing: .3em; color: #a5b0d2; }
+h1 { font-size: clamp(40px, 10vw, 64px); letter-spacing: -.05em; margin: 14px 0; }
+h1 span { color: #a8ffce; }
+.intro, footer, .hint { color: #a5b0d2; }
+.game { margin-top: 32px; padding: 28px; border: 1px solid #394360; border-radius: 24px; background: #19213b; box-shadow: 0 20px 70px #0003; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.label { display: block; font-size: 10px; letter-spacing: .15em; color: #a5b0d2; }
+strong { display: block; font-size: clamp(25px, 7vw, 36px); margin: 6px 0 16px; font-variant-numeric: tabular-nums; }
+small { font-size: 12px; font-weight: 400; }
+progress { width: 100%; height: 7px; border: 0; border-radius: 8px; overflow: hidden; accent-color: #a8ffce; }
+progress::-webkit-progress-bar { background: #303a57; }
+progress::-webkit-progress-value { background: #a8ffce; }
+progress::-moz-progress-bar { background: #a8ffce; }
+#message { min-height: 3em; font-size: 14px; line-height: 1.5; margin: 24px 0 12px; }
+button { font: inherit; cursor: pointer; touch-action: manipulation; border: 0; }
+button:focus-visible { outline: 3px solid #fff; outline-offset: 5px; }
+#target { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px; margin: 0 auto 24px; width: 180px; height: 180px; border-radius: 50%; background: #a8ffce; color: #132e24; font-weight: 700; box-shadow: 0 8px 0 #5bac83; user-select: none; -webkit-user-select: none; }
+.target-icon { font-size: 55px; line-height: 1; }
+#target:active:not(:disabled) { transform: translateY(5px); box-shadow: 0 3px 0 #5bac83; }
+#target:disabled { opacity: .35; cursor: default; }
+#start { padding: 13px 32px; border-radius: 12px; background: #eff2ff; color: #19213b; font-weight: 700; }
+#start:disabled { opacity: .4; cursor: default; }
+.hint { font-size: 11px; margin-top: 24px; line-height: 1.7; }
+footer { font-size: 12px; margin-top: 24px; }
+@media (max-width: 400px) { main { padding-top: 24px; } .game { padding: 20px 16px; } }

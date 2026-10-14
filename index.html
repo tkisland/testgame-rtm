@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10152b">
+  <title>CLICK RUSH — 30秒チャレンジ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">YOUR LITTLE ARCADE</p>
+    <h1>CLICK <span>RUSH</span></h1>
+    <p class="intro">30秒間、どこまで連打できる？</p>
+    <section class="game" aria-label="クリックゲーム">
+      <div class="stats">
+        <div><span class="label">SCORE</span><strong id="score">0</strong></div>
+        <div><span class="label">TIME</span><strong><span id="time">30.0</span><small> 秒</small></strong></div>
+        <div><span class="label">BEST</span><strong id="best">0</strong></div>
+      </div>
+      <progress id="timer" max="30" value="30" aria-label="残り時間"></progress>
+      <p id="message" role="status">準備はいい？ スタートを押して挑戦しよう。</p>
+      <button id="target" disabled><span class="target-icon" aria-hidden="true">✦</span><span>クリック！</span></button>
+      <button id="start">スタート</button>
+      <p class="hint">タップ・クリック、またはボタンにフォーカスして Space / Enter</p>
+    </section>
+    <footer>自己ベストはこのブラウザーに保存されます。</footer>
+  </main>
+</body>
+</html>
